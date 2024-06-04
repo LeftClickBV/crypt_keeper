@@ -69,7 +69,7 @@ to be used for encryption"
         end
 
         crypt_keeper_fields.each do |field|
-          serialize field, encryptor
+          serialize field, coder: encryptor
         end
       end
 
